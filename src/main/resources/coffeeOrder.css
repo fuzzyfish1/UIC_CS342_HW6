@@ -13,3 +13,11 @@
 			repeating-image-pattern("https://edencoding.com/resources/wp-content/uploads/2021/02/Stars_128.png"),
 			radial-gradient(center 50% 50%, radius 50%, #FFFFFF33, #00000033);
 }
+
+.VBox {
+
+}
+
+.HBox {
+   -fx-min-width: 500px;
+}

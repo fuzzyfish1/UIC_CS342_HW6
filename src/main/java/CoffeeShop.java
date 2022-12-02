@@ -22,15 +22,15 @@ public class CoffeeShop extends Application {
 		Parent root = FXMLLoader.load(getClass()
 				.getResource("/coffeeOrder.fxml"));
 
-		Scene s1 = new Scene(root, 500,500);
+		Scene s1 = new Scene(root, 700,700);
 		s1.getStylesheets().add("/coffeeOrder.css");
 		primaryStage.setScene(s1);
 		primaryStage.show();
 		
-		Coffee order = new Sugar(new Cream( new ExtraShot(new BasicCoffee())));
+		//Coffee order = new Sugar(new Cream( new ExtraShot(new BasicCoffee())));
 		
-		double cost = order.makeCoffee();
-		System.out.println("Total: "+cost);
+		//double cost = order.makeCoffee();
+		//System.out.println("Total: "+cost);
 	}
 
 }

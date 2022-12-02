@@ -1,6 +1,8 @@
 package coffee;
 
-abstract class CoffeeDecorator implements Coffee {
+import java.util.function.Consumer;
+
+public abstract class CoffeeDecorator implements Coffee {
 	protected Coffee specialCoffee;
 
 	public CoffeeDecorator(Coffee specialCoffee) {

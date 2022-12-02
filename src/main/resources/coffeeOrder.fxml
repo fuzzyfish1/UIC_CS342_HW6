@@ -9,30 +9,50 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.image.Image?>
-<BorderPane xmlns="http://javafx.com/javafx"
+<BorderPane fx:id="Parent"
+			xmlns="http://javafx.com/javafx"
 			xmlns:fx="http://javafx.com/fxml"
 			fx:controller="GUI.fxController"
-			prefHeight="400.0" prefWidth="600.0">
+			prefHeight="400.0" prefWidth="700.0">
 
-	<HBox>
+
+	<left>
 		<ImageView>
 			<image>
-			<Image
-					url="/cofee.png"
-					backgroundLoading="true"
-			/>
+				<Image
+						url="/cofee.png"
+						backgroundLoading="true"
+				/>
 			</image>
 		</ImageView>
-		<VBox>
-			<Button fx:id="bCream">Cream</Button>
-			<Button fx:id="bSugar">Sugar</Button>
-			<Button fx:id="bShot">Shot</Button>
+	</left>
 
-			<Text fx:id="tCost">Cost</Text>
-			<Button fx:id="bOrder">Order</Button>
-			<Button fx:id="bDelete">Delete</Button>
+	<center>
+		<VBox fx:id="orderPanel" prefWidth="100.0">
+			<Button fx:id="bOrder" text="newOrder"></Button>
+			<Button fx:id="bComplete" text="orderComplete"></Button>
+			<Button fx:id="bDelete" text="Delete"></Button>
+
+			<Button fx:id="bCream" text="Cream" visible="false"></Button>
+			<Button fx:id="bSugar" text="Sugar" visible="false"></Button>
+			<Button fx:id="bShot" text="Shot" visible="false"></Button>
+			<Button fx:id="bFoam" text="Foam" visible="false"></Button>
+			<Button fx:id="bSyrup" text="Syrup" visible="false"></Button>
+
+			<Text fx:id="tCost" text=" "></Text>
+
+		</VBox>
+	</center>
+
+	<right>
+		<VBox>
+			<Text fx:id="orderSummary" text="OrderSummary">
+			</Text>
+			<Text fx:id="totalBox"></Text>
 		</VBox>
 
-	</HBox>
+	</right>
+
+
 
 </BorderPane>

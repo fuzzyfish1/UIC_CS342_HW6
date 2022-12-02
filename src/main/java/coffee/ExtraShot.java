@@ -1,20 +1,27 @@
 package coffee;
 
+import java.util.function.Consumer;
+
 public class ExtraShot extends CoffeeDecorator {
 
-	private double cost = 1.20;
-	
-	public ExtraShot(Coffee specialCoffee){
+	private final double cost = 1.20;
+	private Consumer<String> addThing;
+	public ExtraShot(Coffee specialCoffee) {
 		super(specialCoffee);
 	}
-	
+
 	public double makeCoffee() {
-		return specialCoffee.makeCoffee() + addShot();
+		return specialCoffee.makeCoffee() + addExtraShot();
 	}
-	
-	private double addShot() {
-		System.out.println(" + extra shot: $1.20");
-		
+
+	private double addExtraShot() {
+		addThing.accept(" + ExtraShot: $1.20");
+		System.out.println(" + ExtraShot: $1.20");
+
 		return cost;
+	}
+
+	public void setAddThing(java.util.function.Consumer<String> addThing) {
+		this.addThing = addThing;
 	}
 }
