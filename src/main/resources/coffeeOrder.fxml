@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.image.Image?>
+<BorderPane xmlns="http://javafx.com/javafx"
+			xmlns:fx="http://javafx.com/fxml"
+			fx:controller="GUI.fxController"
+			prefHeight="400.0" prefWidth="600.0">
+
+	<HBox>
+		<ImageView>
+			<image>
+			<Image
+					url="/cofee.png"
+					backgroundLoading="true"
+			/>
+			</image>
+		</ImageView>
+		<VBox>
+			<Button fx:id="bCream">Cream</Button>
+			<Button fx:id="bSugar">Sugar</Button>
+			<Button fx:id="bShot">Shot</Button>
+
+			<Text fx:id="tCost">Cost</Text>
+			<Button fx:id="bOrder">Order</Button>
+			<Button fx:id="bDelete">Delete</Button>
+		</VBox>
+
+	</HBox>
+
+</BorderPane>

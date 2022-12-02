@@ -1,3 +1,4 @@
+package coffee;
 
 public class BasicCoffee implements Coffee {
 

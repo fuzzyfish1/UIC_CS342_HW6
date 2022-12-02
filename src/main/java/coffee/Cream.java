@@ -1,8 +1,9 @@
+package coffee;
 
-public class Cream extends CoffeeDecorator{
+public class Cream extends CoffeeDecorator {
 
 	private double cost = .50;
-	Cream(Coffee specialCoffee){
+	public Cream(Coffee specialCoffee){
 		super(specialCoffee);
 	}
 	

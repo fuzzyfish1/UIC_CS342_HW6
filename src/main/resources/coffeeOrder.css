@@ -1,0 +1,15 @@
+.Button {
+	-fx-background-color: rgba(165, 42, 42, 0.65);
+	-fx-min-width: 500px;
+}
+
+.Text {
+	-fx-min-width: 500px;
+}
+
+.root{
+	-fx-background-color:
+			linear-gradient(#4568DC, #B06AB3),
+			repeating-image-pattern("https://edencoding.com/resources/wp-content/uploads/2021/02/Stars_128.png"),
+			radial-gradient(center 50% 50%, radius 50%, #FFFFFF33, #00000033);
+}
